@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    min-height: 100%;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 17px;
+}
+#canvas{
+    background-color: whitesmoke;
+    min-height: 400px;
+    min-width: 1200px;
+}
+g{
+    display: flex;
+    flex-direction: row;
+}
+#tooltip{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: none;
+    border-radius: 5px;
+    width: auto;
+    pointer-events: none;	
+    font: 19px sans-serif;
+    text-align: center;
+    opacity: 0.85;
+}
+.cell {
+    
+    transition: fill 0.3s;
+  }
+
+  .cell:hover {
+    fill: lightblue;
+  }
